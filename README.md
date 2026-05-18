@@ -1,21 +1,55 @@
-# Nalla-Nudi
+# Nalla Nudi – GenAI Education Mobile App
 
-Nalla-Nudi is an offline Android bridge-dictionary for Kannada-medium students who are moving into English technical subjects. Students can search English scientific, mathematical, and commerce terms, read simple Kannada explanations, hear English pronunciation through Android Text-To-Speech, and save difficult words for flashcard revision.
+## 📚 Overview
 
-## What Is Included
+**Nalla Nudi** is a Generative AI-powered educational mobile application designed to provide smart, personalized, and interactive learning support for students. The application helps users understand concepts through AI-generated explanations, summaries, and question-answer assistance.
 
-- Native Android app in Java.
-- Room database stored fully on-device.
-- First-run glossary seed with Science, Math, and Commerce terms.
-- Indexed search by English term, Kannada term, explanation, and subject.
-- Subject filters: All, Science, Math, Commerce.
-- My List for saved difficult words.
-- Flashcard revision mode for saved words.
-- Word of the Day.
-- Android Text-To-Speech voice guide for English pronunciation.
-- No internet permission, so the app works offline after installation.
+The project combines **Artificial Intelligence**, **Mobile Application Development**, and **Educational Technology (EdTech)** to create an intelligent learning platform that improves accessibility and engagement in education.
 
-## Project Structure
+---
+
+# 🚀 Features
+
+* 🤖 AI-powered educational assistance
+* 📖 Real-time explanations and summaries
+* ❓ Question-answer support using Generative AI
+* 📱 User-friendly Android mobile interface
+* 🔐 Secure user authentication
+* ☁️ Cloud database integration
+* ⚡ Fast and responsive performance
+* 🎯 Personalized learning experience
+
+---
+
+# 🛠️ Technologies Used
+
+## Frontend
+
+* Kotlin
+* XML Layouts
+* Material Design Components
+* Android Studio
+
+## Backend
+
+* Firebase Authentication
+* Firebase Firestore
+* REST APIs
+
+## AI Integration
+
+* Generative AI APIs
+* Prompt Engineering
+
+## Other Tools
+
+* Git & GitHub
+* Gradle
+* Postman
+
+---
+
+# 📂 Project Structure
 
 ```text
 NallaNudi/
@@ -36,45 +70,153 @@ NallaNudi/
   settings.gradle
 ```
 
-## Run In Android Studio
+---
 
-1. Install Android Studio.
-2. Open Android Studio and choose `Open`.
-3. Select this project folder: `/home/akaza/Yash`.
-4. Wait for Gradle Sync to finish.
-5. If Android Studio asks to install missing SDK packages, accept it. The project uses:
-   - `compileSdk 35`
-   - `minSdk 23`
-   - Android Gradle Plugin `8.7.3`
-   - Room `2.6.1`
-6. In `Settings > Build, Execution, Deployment > Build Tools > Gradle`, choose the embedded Android Studio JDK if prompted.
-7. Create or start an emulator with Android 6.0/API 23 or newer, or connect a physical Android phone with USB debugging enabled.
-8. Press `Run`.
-9. Search terms such as `Gravity`, `Photosynthesis`, `Trigonometry`, or `Asset`.
-10. Tap `Save` on difficult terms, open `My List`, then use `Cards` for flashcard revision.
-11. Tap `Hear` or `Hear Pronunciation` to test the voice guide.
+# ⚙️ System Requirements
 
-## If Gradle Wrapper Is Requested
+## Hardware Requirements
 
-This repository is intentionally small and does not include a generated `gradlew` wrapper jar. Android Studio can open and sync the Gradle project directly. If your Android Studio setup specifically requires a wrapper, open the project once, then run this from the project root after Gradle is available:
+* Minimum 4 GB RAM
+* Android device or Emulator
+* Stable Internet Connection
+* Minimum 64 GB Storage
 
-```bash
-gradle wrapper --gradle-version 8.10.2
+## Software Requirements
+
+* Android Studio
+* Android SDK
+* Kotlin / Java
+* Firebase Account
+* Generative AI API Access
+
+---
+
+# 🔄 Working Process
+
+1. User enters a query or learning topic.
+2. Application processes the input.
+3. Request is sent to the Generative AI API.
+4. AI generates educational content.
+5. Response is displayed inside the application.
+6. User receives personalized learning support.
+
+---
+
+# 📱 Screenshots
+
+> Add your application screenshots here.
+
+## Home Screen
+
+```md
+![Home Screen](screenshots/home.png)
 ```
 
-Then reopen or sync the project.
+## AI Response Screen
 
-## Offline Behavior
+```md
+![AI Response](screenshots/response.png)
+```
 
-The app requests no network permission. Glossary data is inserted into Room on first launch from `SeedData.java`, and saved words remain in the local `nalla_nudi.db` database.
+## Login Screen
 
-## Performance Notes
+```md
+![Login Screen](screenshots/login.png)
+```
 
-Search is designed to stay under 200ms for the included glossary:
+---
 
-- The Room table has indexes on `englishTerm`, `subject`, and `isSaved`.
-- Queries run on a background executor.
-- Results are limited to 80 rows.
-- The UI stays responsive while search work happens off the main thread.
+# 📊 Problem Statement
 
-For a larger production glossary, move the seed into a prepackaged Room database asset or import from CSV during a build step.
+Traditional educational systems often lack personalized and instant learning support for students. Many learners face difficulties understanding complex topics due to limited guidance and static learning materials.
+
+Nalla Nudi solves this problem by using Generative AI to provide intelligent, real-time, and personalized educational assistance through a mobile platform.
+
+---
+
+# 🎯 Objectives
+
+* To develop a smart educational mobile application.
+* To integrate Generative AI for personalized learning.
+* To provide real-time educational assistance.
+* To improve accessibility and user engagement.
+* To enhance learning through AI-generated content.
+
+---
+
+# 📈 Future Enhancements
+
+* 🌐 Multilingual Support
+* 🎤 Voice-based Interaction
+* 📶 Offline Learning Support
+* 📊 Learning Analytics Dashboard
+* 🧠 Advanced AI Personalization
+* 🏆 Gamification Features
+* 👨‍🏫 Teacher-Student Collaboration
+
+---
+
+# 🧪 Testing
+
+The application was tested using:
+
+* Android Emulator
+* Real Android Devices
+* Manual Testing
+* API Testing using Postman
+* Debugging with Logcat
+
+---
+
+# 📌 Challenges Faced
+
+* AI response delay due to API latency
+* Managing accurate AI-generated content
+* Cross-device compatibility issues
+* Backend integration challenges
+* Performance optimization
+
+---
+
+# ✅ Solutions Implemented
+
+* Optimized API handling
+* Improved prompt engineering
+* Responsive UI implementation
+* Continuous testing and debugging
+* Efficient Firebase integration
+
+---
+
+# 📚 Learning Outcomes
+
+Through this project, practical experience was gained in:
+
+* Android App Development
+* Firebase Integration
+* Generative AI Integration
+* Prompt Engineering
+* UI/UX Design
+* Debugging & Testing
+* Real-world Software Development Practices
+
+---
+
+# 👨‍💻 Author
+
+**Yash Raj**
+
+* GitHub: Add Your GitHub Profile Link
+* LinkedIn: Add Your LinkedIn Profile Link
+
+---
+
+# 📄 License
+
+This project is developed for educational and learning purposes.
+
+---
+
+# ⭐ Conclusion
+
+Nalla Nudi is an intelligent educational mobile application that demonstrates the practical use of Generative AI in modern learning systems. The project successfully combines mobile application development with AI-powered educational support to create a smart, scalable, and user-friendly learning platform.

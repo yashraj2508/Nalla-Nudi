@@ -206,8 +206,7 @@ Through this project, practical experience was gained in:
 
 **Yash Raj**
 
-* GitHub: Add Your GitHub Profile Link
-* LinkedIn: Add Your LinkedIn Profile Link
+* GitHub: (https://github.com/yashraj2508)
 
 ---
 

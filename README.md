@@ -104,25 +104,17 @@ NallaNudi/
 
 # 📱 Screenshots
 
-> Add your application screenshots here.
-
 ## Home Screen
 
-```md
-![Home Screen](screenshots/home.png)
-```
+![Home Screen](screenshot/Home.jpeg)
 
-## AI Response Screen
+## My List Screen
 
-```md
-![AI Response](screenshots/response.png)
-```
+![AI Response](screenshot/mylist.jpeg)
 
-## Login Screen
+## Card Screen
 
-```md
-![Login Screen](screenshots/login.png)
-```
+![Card Screen](screenshot/cards.jpeg)
 
 ---
 
